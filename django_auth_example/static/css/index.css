@@ -1,0 +1,58 @@
+{% load static %}
+
+#main-background {
+    background-image: url("/static/img/marvin-meyer-SYTO3xs06fU-unsplash.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+#main-background-overlay {
+    background-color: #363636;
+    opacity: 0.2;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+#main-content-area #main-content {
+    width: 60%;
+    height: 60%;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    color: white;
+}
+
+#main-content-area #main-content h1 {
+    font-size: 4em;
+}
+
+#main-content-area #main-content h4 {
+    line-height: 16px;
+}
+
+#main-content-area #main-content #action-button-row {
+    margin-top: 60px;
+}
+
+#main-content-area #main-content #action-button-row .transparent-action-button {
+    width: 96px;
+    padding: 12px 20px;
+    border: 1px solid white;
+    border-radius: 3px;
+    cursor: pointer;
+    display: inline-block;
+    margin-right: 16px;
+}
