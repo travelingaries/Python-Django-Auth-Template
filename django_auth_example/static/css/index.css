@@ -56,3 +56,10 @@
     display: inline-block;
     margin-right: 16px;
 }
+
+#credit {
+    font-family: sans-serif;
+    font-size: 10px;
+    color: white;
+    position: absolute;
+}
