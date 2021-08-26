@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block title %}Home{% endblock %}
+{% block stylesheets %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/index.css' %}">
+{% endblock %}
+
+{% block content %}
+<section id="main-background"></section>
+<div id="main-background-overlay"></div>
+<div id="main-content-area">
+    <div id="main-content">
+        <h1>HELLO</h1>
+        <h4>DESCRIPTION TEXT LINE 1</h4>
+        <h4>DESCRIPTION TEXT LINE 2</h4>
+        <div id="action-button-row">
+            <div class="transparent-action-button" id="main-action-button">▶ ACTION 1</div>
+            <div class="transparent-action-button" id="sub-action-button">▶ ACTION 2</div>
+        </div>
+        <script>
+            document.getElementById('main-action-button').onclick = function() {
+                window.open('https://www.linkedin.com/in/travelingaries/', '_blank');
+            }
+            document.getElementById('sub-action-button').onclick = function() {
+                window.open('https://www.github.com/travelingaries/', '_blank');
+            }
+        </script>
+    </div>
+</div>
+<div id="credit">Photo by Marvin Meyer | Unsplash</div>
+{% endblock %}
