@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block title %}Profile{% endblock %}
+{% block stylesheets %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/profile.css' %}">
+{% endblock %}
+
+{% block content %}
+<section id="main-background"></section>
+<div id="main-content-area">
+    <div id="main-content">
+        <h3><span id="nickname">{{ nickname }}</span>'s Profile</h3>
+        <p><b>Email</b> : {{ email }}</p>
+        <p><b>Name</b> : {{ name }}</p>
+        <p><b>Phone</b> : {{ phone }}</p>
+        <a href="/accounts/reset_password"><p id="reset-password-link">Reset password</p></a>
+    </div>
+</div>
+{% endblock %}

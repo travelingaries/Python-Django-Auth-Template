@@ -11,6 +11,7 @@
     top: 0;
     left: 0;
     right: 0;
+    overflow: hidden;
 }
 #main-background-overlay {
     background-color: #363636;

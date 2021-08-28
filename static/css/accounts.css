@@ -1,6 +1,12 @@
 .main-accounts-form-section {
     width: 100vw;
     height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    overflow: hidden;
 }
 
 .accounts-form-div {
@@ -48,4 +54,16 @@
 
 .accounts-form-div #phone-pin {
     visibility: hidden;
+}
+
+.accounts-form-div #reset-password-form {
+    margin-top: 50px;
+    display: none;
+}
+
+#reset-password-link {
+    font-family: sans-serif;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 50px;
 }
