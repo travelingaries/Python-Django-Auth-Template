@@ -31,12 +31,17 @@
           <label>Password</label>
           <input type="password" name="password"/>
         </div>
+        <div class="form-field" id="email-input">
+          <label>Email</label>
+          <input type="text" name="email" placeholder="user with same name exists, need email to authenticate"/>
+        </div>
         <button id="login-btn">Log In</button>
         <script>
           function changeLoginOption() {
             let select = document.getElementById('login-option');
             document.getElementById('login-option-label').innerHTML = select.options[select.selectedIndex].text;
             document.getElementById('selected-login-option').value = select.options[select.selectedIndex].value;
+            $('#email-input').css('display', 'none');
           }
 
           function validateLoginOptionValue(input) {
@@ -94,6 +99,12 @@
               alert('Please check password : At least 1 lower case, 1 upper case, 1 number each / 6~20 letters');
               return;
             }
+            if($('#email-input').css('display') == 'block') {
+              let email = document.querySelector('input[name="email"]').value;
+              if(!validateEmail(email)) {
+                alert('Please check email');
+              }
+            }
 
             let data = JSON.stringify($(form).serializeArray());
             let token = $(form).find('input[name=csrfmiddlewaretoken]').val();
@@ -109,7 +120,10 @@
               },
               error: function(err) {
                 alert('error: ' + err.responseJSON.error);
-              }
+                if(err.status == 401) {
+                    $('#email-input').css('display', 'block');
+                }
+              },
             });
           });
         </script>

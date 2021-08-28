@@ -42,6 +42,10 @@
     float: right;
 }
 
+.accounts-form-div #email-input {
+    display: none;
+}
+
 .accounts-form-div #phone-pin {
     visibility: hidden;
 }
