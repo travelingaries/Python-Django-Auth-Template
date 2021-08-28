@@ -89,7 +89,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 CRISPY_TEMPLATE_PACK="bootstrap4"
 
-SITE_ID=1
+SITE_ID=2
 
 # Internationalization
 # https://docs.djangoproject.com/en/3.2/topics/i18n/
