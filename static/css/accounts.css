@@ -3,7 +3,7 @@
     height: 100vh;
 }
 
-#sign-up-form-div {
+.accounts-form-div {
     width: 60%;
     height: 70%;
     margin: auto;
@@ -14,29 +14,34 @@
     right: 0;
 }
 
-#sign-up-form-div .form-field {
+.accounts-form-div .form-field {
     width: 80%;
     margin-bottom: 8px;
 }
 
-#sign-up-form-div .form-field label {
+.accounts-form-div .form-field label {
     width: 40%;
 }
 
-#sign-up-form-div .form-field input {
+.accounts-form-div .form-field input {
     width: 60%;
     float: right;
 }
 
-#sign-up-form-div .form-field #phone-input {
+.accounts-form-div .form-field select {
+    width: 61%;
+    float: right;
+}
+
+.accounts-form-div .form-field #phone-input {
     width: calc(60% - 90px);
 }
 
-#sign-up-form-div .form-field #send-pin-btn {
+.accounts-form-div .form-field #send-pin-btn {
     width: 90px;
     float: right;
 }
 
-#sign-up-form-div #phone-pin {
+.accounts-form-div #phone-pin {
     visibility: hidden;
 }
