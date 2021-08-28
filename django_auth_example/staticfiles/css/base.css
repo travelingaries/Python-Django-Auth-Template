@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
+
+html {
+    font-family: 'Open Sans', sans-serif;
+}
+
+#navbar {
+    z-index: 10;
+    position: fixed;
+    padding-left: 15%;
+    width: 70%;
+}
+
+#navbar a:link {
+    text-decoration: none !important;
+}
+
+#navbar #wordmark {
+    color: white;
+    letter-spacing: 6px;
+    font-size: 32px;
+    cursor: pointer;
+    text-decoration: none;
+    float: left;
+}
+
+#navbar #navbar-right {
+    float: right;
+    margin-top: 20px;
+}
+
+#navbar #navbar-right .navbar-submenu {
+    color: white;
+    display: inline-block;
+    margin-left: 30px;
+}
